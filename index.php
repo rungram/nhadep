@@ -25,16 +25,15 @@
 	
 	
 	include_once _lib."functions_giohang.php";
-	if($_REQUEST['command']=='add' && $_REQUEST['productid']>0){
-	
-	$pid=$_REQUEST['productid'];	
-	$_SESSION['size'.$pid]=$_REQUEST['spsize']; 
-	$_SESSION['mau'.$pid]=$_REQUEST['spmau']; 
-	$q=isset($_GET['quality']) ? (int)$_GET['quality'] : "1";
-	addtocart($pid,$q);
-	redirect("http://$config_url/gio-hang.html");
-	}
 	$config_url='localhost:81/nhadep';
+    if($_REQUEST['command']=='add' && $_REQUEST['productid']>0){
+    	$pid=$_REQUEST['productid'];	
+    	$_SESSION['size'.$pid]=$_REQUEST['spsize']; 
+    	$_SESSION['mau'.$pid]=$_REQUEST['spmau']; 
+    	$q=isset($_GET['quality']) ? (int)$_GET['quality'] : "1";
+    	addtocart($pid,$q);
+    	redirect("http://$config_url/gio-hang.html");
+	}
 ?>
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#" class=" yes-js js_active js" lang="vi">
@@ -139,6 +138,19 @@ img.wp-smiley, img.emoji {
 }
 </style>
 <link rel="stylesheet" type="text/css" href="css/vantam.css" media="all">
+<script language="javascript" type="text/javascript">
+	function addtocart(pid){
+		document.formtruong.productid.value=pid;
+		document.formtruong.command.value='add';
+		document.formtruong.submit();
+	}
+</script>
+
+
+<form name="formtruong" action="index.php">
+	<input type="hidden" name="productid" />
+    <input type="hidden" name="command" />
+</form>
 </head>
 
 <body class="home page page-id-36 page-template page-template-index page-template-index-php">

@@ -106,7 +106,7 @@ if(isset($_GET['id']))
 					<a href="https://plus.google.com/share?url=http://nhadep.com.vn/product/sofa-da-italia-newming-72608036/"><img src="http://nhadep.com.vn/wp-content/themes/nhadep/images/gshare.jpg" alt="G+ Share"></a>
 					<a href="#" class="single-product-print"><img src="http://nhadep.com.vn/wp-content/themes/nhadep/images/print.png" alt=""> In trang này</a>
 				</div>
-				<a href="#/cart/?add-to-cart=8211" class="dat_mua">Đặt mua sản phẩm này</a>
+				<button type="submit" name="do_submit" id="do_submit" class="dat_mua" onclick="addtocart(<?=$chitiet_sp['id']?>)"  valign=""><span>Đặt mua sản phẩm này</span></button>
 													
 <div class="yith-wcwl-add-to-wishlist add-to-wishlist-8211">
 		    <div class="yith-wcwl-add-button show" style="display:block">
@@ -200,7 +200,7 @@ if(isset($_GET['id']))
 														<p class="price regular_price">&nbsp;</p>
 									<p class="price">Giá: <span><span class="amount"><?php echo number_format ($chitiet_sp['gia'],0,",",".")." ₫";?></span></span></p>
 											</div>
-															<a href="http://nhadep.com.vn/cart/?add-to-cart=8211" class="dat_mua">Đặt mua sản phẩm này</a>
+															<button type="submit" name="do_submit" id="do_submit" class="dat_mua" onclick="addtocart(<?=$chitiet_sp['id']?>)"  valign=""><span>Đặt mua sản phẩm này</span></button>
 												</div>
 			<div class="clear"></div>
 		</div>

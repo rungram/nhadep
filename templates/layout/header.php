@@ -25,6 +25,7 @@
 					<li id="menu-item-2496" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2496"><a href="http://homedecor.info.vn" target="_blank">Thiết kế</a></li>
 					<li id="menu-item-1118" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1118"><a href="http://homedecor.info.vn" target="_blank">Thi công</a></li>
 					<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a href="http://homedecor.info.vn/lien-he.html" target="_blank">Liên hệ</a></li>
+					<li id="menu-item-120" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-120"><a class="giohang" href="gio-hang.html">Giỏ hàng </a></li>
 				</ul>
 			</div>
 			<div class="clear"></div>

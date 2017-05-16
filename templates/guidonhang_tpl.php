@@ -42,19 +42,12 @@
 	  		 $sql_sendgiohang="insert into #_donhang(tennguoidat,dienthoai,diachi,noidung,tenmathang,giamathang,soluong,ngaydathang,tonggia,hinh,user,tenkhongdau,masp,size,mau,email,tinh_tp,ngaytim)
 	values('$tennguoidat','$dienthoai','$diachi','$noidung','$tenmathang','$giamathang','$soluong','$ngaydathang','$tonggia','$hinhmathang','$user','$tenkhongdau','$masp','$size','$mau','$email','$tinh_tp','$ngaytim')";
    	  		 $send_giohang=$d->query($sql_sendgiohang);	
-	   		
-	 			if($send_giohang) {
-					unset($_SESSION['cart']);
-					redirect("index.html");
-				}
- 									
-  			 }
 			
 			
 			
    	   //add vo database
 	   
-		/* //add vo mail	
+		 //add vo mail	
 			
 			$body = '<table>';
 			$body .= '
@@ -151,35 +144,40 @@ include_once "phpmailer/class.phpmailer.php";
 include_once "phpmailer/class.smtp.php";    
 
 //Khởi tạo đối tượng
-$mail = new PHPMailer();
-//Thiet lap thong tin nguoi gui va email nguoi gui
-$mail->IsSMTP(); // Gọi đến class xử lý SMTP
-$mail->SMTPAuth   = true;                  // Sử dụng đăng nhập vào account
-$mail->Host       = "112.213.84.102";     // Thiết lập thông tin của SMPT
-$mail->Username   = 'guimail@huynhgianguyen.com'; // SMTP account username
-$mail->Password   = 'huynhgianguyen!@#$';            // SMTP account password
-$mail->SetFrom($row_setting['email'],$row_setting['title']);
-//Thiết lập thông tin người nhận
-$mail->AddAddress($row_setting['email'],$row_setting['title']);
+$subject = "Thông tin đơn hàng.";
+//$from = "shopnana.info@gmail.com";
+$from = "nguyenleduykhang29111994@gmail.com";
+$from_name = $tennguoidat;
 
-//Thiết lập email nhận email hồi đáp
-//nếu người nhận nhấn nút Reply
-$mail->AddReplyTo($row_setting['email'],$row_setting['title']);
+$to = $email;
+//$to = "ngoisaoleloi@gmail.com";
+//$to = $txt_email;
 
-/*=====================================
- * THIET LAP NOI DUNG EMAIL
- *=====================================*/
+global $error;
+$mail = new PHPMailer();  // tạo một đối tượng mới từ class PHPMailer
+$mail->IsSMTP(); // bật chức năng SMTP
+$mail->IsSMTP(); // bật chức năng SMTP
+$mail->SMTPDebug = 0;  // kiểm tra lỗi : 1 là  hiển thị lỗi và thông báo cho ta biết, 2 = chỉ thông báo lỗi
+$mail->SMTPAuth = true;  // bật chức năng đăng nhập vào SMTP này
+$mail->SMTPSecure = 'ssl'; // sử dụng giao thức SSL vì gmail bắt buộc dùng cái này
 
-//Thiết lập tiêu đề
-/*$mail->Subject    = "Có đơn hàng mới từ website";
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 465; 
+$mail->Username = "nguyenleduykhang29111994@gmail.com";  
+$mail->Password = "Kcdagtemyatpxh1";           
+$mail->SetFrom($from, $from_name);
+$mail->From = $from;		
 
+$mail->Subject = $subject;
+$mail->Body = $body;
+$mail->AddAddress($to);
+
+$mail->AddReplyTo($email,"Thông tin phản hồi.");// Ấn định email sẽ nhận khi người dùng reply lại.
+$mail->WordWrap = 50; // set word wrap   
+$mail->IsHTML(true); // send as HTML
 //Thiết lập định dạng font chữ
 $mail->CharSet = "utf-8";
 
-$mail->AltBody = "To view the message, please use an HTML compatible email viewer!";
-
-//Thiết lập nội dung chính của email
-$mail->MsgHTML($body);
 
 	if(!$mail->Send()) {
  			transfer("Lỗi - Vui lòng thử lại", "");
@@ -197,7 +195,6 @@ $mail->MsgHTML($body);
 			
 			
 		}	
-}
-*/
+    }
 }
 ?>
