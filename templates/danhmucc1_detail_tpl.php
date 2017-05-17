@@ -1,7 +1,8 @@
 <?php 
             $id =  addslashes($_GET['id']);
 			$d->reset();
-			$sql_tungdanhmuc="select * from #_product where hienthi =1 and id_list='$id'  order by stt asc ";
+			$order = isset($_GET['order']) ? 'order by gia '.$_GET['order'] : 'order by stt asc';
+			$sql_tungdanhmuc="select * from #_product where hienthi =1 and id_list='$id' ".$order;
 			$d->query($sql_tungdanhmuc);	
 			$result_spnam=$d->result_array();	
 			
@@ -15,18 +16,42 @@
 			$curPage = isset($_GET['p']) ? $_GET['p'] : 1;
 			$url=getCurrentPageURL();
 			$maxR=30;
-			$maxP=5;
+			$maxP=15;
 			$paging=paging_home($result_spnam , $url, $curPage, $maxR, $maxP);
 			$result_spnam=$paging['source'];
             
 			
 			$total_sp = count($result_spnam);
 ?>
+<script>
+function orderajax(){
+	var order =  $('#orderby').val();
+	var phongcach =  $('#phongcach').val();
+    $.ajax({
+        url	    : "danhmuc_ajax_tpl.php",
+        type		: "POST",
+        data		: {id: <?php echo $id;?>, order: order ,phongcach: phongcach},
+        success	: function(data) {
+	        $(".products").html(data);
+	        }
+         });
+};
+function changephongcach(value){
+	$('#phongcach').val(value);
+	orderajax();
+};
+</script>
 	<!-- start header -->
+<input type="hidden" id="phongcach" />
 <div class="brackcum">
 	<div class="container">
      <!-- Breadcrumb NavXT 5.3.0 -->
-<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to ." href="index.html" class="home">Trang chủ</a></span><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to the Sản phẩm mới Danh mục sản phẩm archives." href="index.html">Sản phẩm mới</a></span><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to the Phòng khách Danh mục sản phẩm archives." href="index.html">Phòng khách</a></span><span typeof="v:Breadcrumb"><span property="v:title">Sofa da Malaysia Hugo góc phải, màu xám | Mã: 72605032</span></span>	</div>
+<span typeof="v:Breadcrumb">
+<a rel="v:url" property="v:title" title="Go to ." href="index.html" class="home">Trang chủ</a>
+</span>
+<span typeof="v:Breadcrumb">
+<span property="v:title"><?php echo $result_laylist['ten_vi'];?></span>
+</span>	</div>
 </div>	
 <div id="content" class="archive">
 	<div class="container">
@@ -34,13 +59,13 @@
 		<div class="left">
 			<div class="filter">
 				<h4>Phong cách:</h4>
-				<ul class="filter_ul" id="filter_style">
-					<li><a href="#" data-fill=""><p class="active"><span></span></p>Tất cả</a></li>
-											<li><a href="#" data-fill="co-dien"><p><span></span></p>Cổ điển</a></li>
-											<li><a href="#" data-fill="hien-dai"><p><span></span></p>Hiện đại</a></li>
-											<li><a href="#" data-fill="sang-tao"><p><span></span></p>Sáng tạo</a></li>
-											<li><a href="#" data-fill="sang-trong"><p><span></span></p>Sang trọng</a></li>
-											<li><a href="#" data-fill="tre-trung"><p><span></span></p>Trẻ trung</a></li>
+				<ul class="filter_ul" >
+					<li class="phongcach" ><a onclick="changephongcach('all')"><p class="active"><span></span></p>Tất cả</a></li>
+											<li class="phongcach"><a onclick="changephongcach('co-dien')"><p><span></span></p>Cổ điển</a></li>
+											<li class="phongcach"><a onclick="changephongcach('hien-dai')"><p><span></span></p>Hiện đại</a></li>
+											<li class="phongcach"><a onclick="changephongcach('sang-tao')"><p><span></span></p>Sáng tạo</a></li>
+											<li class="phongcach"><a onclick="changephongcach('sang-trong')"><p><span></span></p>Sang trọng</a></li>
+											<li class="phongcach"><a onclick="changephongcach('tre-trung')"><p><span></span></p>Trẻ trung</a></li>
 									</ul>
 			</div>
 			<div class="filter">
@@ -66,7 +91,7 @@
 				<div class="title_right">
 					<span class="count">(Tìm thấy <?php echo count($result_spnam);?> sản phẩm)</span>
 					<span class="orderby">Sắp xếp theo: 
-						<select name="orderby">
+						<select id="orderby" onchange="orderajax()">
 							<option value="" selected="selected">Mặc định</option>
 							<option value="desc">Giá từ cao đến thấp</option>
 							<option value="asc">Giá từ thấp đến cao</option>

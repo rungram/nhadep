@@ -79,6 +79,20 @@ height:"300px",
 	
 </script>
 <?php
+$str_phongcach='<select id="phong_cach" name="phong_cach" class="main_font">
+		<option value="0">Chọn danh mục</option>
+		';
+$codien = ($item['phong_cach']=='co-dien')?'selected':'';
+$hiendai = ($item['phong_cach']=='hien-dai')?'selected':'';
+$sangtao = ($item['phong_cach']=='sang-tao')?'selected':'';
+$sangtrong = ($item['phong_cach']=='sang-trong')?'selected':'';
+$tretrung = ($item['phong_cach']=='tre-trung')?'selected':'';
+    $str_phongcach.='<option value="co-dien" '.$codien.'>Cổ điển</option>';
+    $str_phongcach.='<option value="hien-dai" '.$hiendai.'>Hiện đại</option>';
+    $str_phongcach.='<option value="sang-tao" '.$sangtao.'>Sáng tạo</option>';
+    $str_phongcach.='<option value="sang-trong" '.$sangtrong.'>Sang trọng</option>';
+    $str_phongcach.='<option value="tre-trung" '.$tretrung.'>Trẻ trung</option>';
+$str_phongcach.='</select>';
 function get_main_list()
 {
 	$sql="select * from table_product_list order by stt,id asc";
@@ -284,6 +298,7 @@ function get_main_list22($id_mau)
     <br />  
    	<b>Hiển thị</b> <input type="checkbox" name="hienthi" <?=(!isset($item['hienthi']) || $item['hienthi']==1)?'checked="checked"':''?>><br /> 
    	<b>Chính sách</b> <input type="checkbox" name="chinhsach" <?=(!isset($item['chinhsach']) || $item['chinhsach']==1)?'checked="checked"':''?>><br /> 
+   	<b>Phong cách</b> <?php echo $str_phongcach;?><br>
 	<input type="hidden" name="id" id="id" value="<?=@$item['id']?>" />
 	<input type="submit" value="Lưu" class="btn" />
 	<input type="button" value="Thoát" onclick="javascript:window.location='index.php?com=product&act=man'" class="btn" />
