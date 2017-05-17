@@ -58,167 +58,83 @@
 	$result_thuvienanh=$d->result_array();
 ?>
 
-<div class="banner-slider">
-	<ul class="index_slider owl-carousel owl-theme owl-rtl owl-loaded">
-			<div class="owl-stage-outer">
-			
-			<div class="owl-stage" style="transform: translate3d(6000px, 0px, 0px); transition: all 0.25s ease 0s; width: 27600px;"><div class="owl-item cloned" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div>
-			
-			<div class="owl-item cloned" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/banner-web4.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div>
-			<div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div>
-			<div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/16.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item active" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/banner-web4.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/sofa-vai-2.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/banner-web4.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/sofa-da-2.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/ban-an-7.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/banner-web4.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/ban-an-2.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/PN-1.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/PN-2.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div><div class="owl-item" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/banner-web4.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div>
-			<div class="owl-item cloned" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/slider-web.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div>
-			
-			<div class="owl-item cloned" style="width: 1200px; margin-left: 0px;"><li>
-				<img src="images/16.jpg" alt="">
-				<div class="container">	
-					<h3></h3>
-					<p></p>
-				</div>
-			</li></div>
-			
+
+<div class="container">
+	<div class="banner-slider">
+		<ul class="index_slider">
+		<li> <img src="images/16.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
 			</div>
+		</li>
+		<li> <img src="images/banner-web4.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
 			</div>
-			
-			<div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div style="" class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div></ul>
-	<div class="icons-slider">
-		<div class="container">
-			<ul>
-					<?php include _template."layout/menu_top_list.php"; ?>
-			</ul>
+		</li>
+		<li> <img src="images/sofa-vai-2.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/banner-web4.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/sofa-da-2.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/ban-an-7.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/banner-web4.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/ban-an-2.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/PN-1.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/PN-2.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		<li> <img src="images/banner-web4.jpg" alt="" />
+			<div class="container">
+			<h3></h3>
+			<p></p>
+			</div>
+		</li>
+		</ul>
+		<div class="icons-slider">
+			<div class="container">
+				<ul>
+						<?php include _template."layout/menu_top_list.php"; ?>
+				</ul>
+			</div>
 		</div>
 	</div>
-</div>
-</div>
+	</div>
