@@ -12,11 +12,14 @@
 
 <div id="footer">
 	<div class="container">
-		<div class="left-footer" style="width: 25%;">
-			<h4>GIỚI THIỆU VỀ HOME DECOR</h4>
-				<p><i class="fa fa-map-marker"></i> &nbsp;Tầng 3, tòa nhà An Phú Plaza, số 117-119 đường Lý Chính Thắng, P.7, Q.3, Tp.HCM </p>
-<p><i class="fa fa-phone"></i> Điện thoại: <a href="tel:0917 049 077">0917 049 077</a>  |  Fax: <a href="tel:0917 049 077">0917 049 077 | Giờ mở cửa: 8:00-21:30 (Cả tuần)</a></p>
-				<p><i class="fa fa-map-marker"></i> &nbsp;Tầng 1, tòa nhà Packsimex Plaza, số 52 đường Đông Du, P.Bến Nghé, Q.1, Tp.HCM </p>
+		<div class="left-footer" style="width: 25%;color:#fff">
+			<h4 style="color:#fff">GIỚI THIỆU VỀ HOME DECOR</h4>
+				<p style="color:#fff">
+					HOME DECOR là thương hiệu Thiết kế kiến trúc, Thiết kế nội thất, Trang trí nội thất, Thi công xây dựng, Cung cấp thiết bị nội thất.
+					Với sự  nỗ lực trong suốt thời gian qua, chúng tôi mong muốn mang lại cho khách hàng những sản phẩm thiết kế tốt nhất và biến những sản phẩm
+					thiết kế đó trở thành hiện thực. 
+					Sản phẩm trên website là những sản phẩm của Home Decor. Home Decor tin rằng với khát vọng đầy tính nhân văn của mình, sẽ tạo được nhiều giá trị thích dụng và bền vững cho toàn xã hội.
+				</p>
 		</div>	
 		<div class="right-footer" style="width: 30%;">
 			<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fhomedecor.info.vn%3Ffref%3Dts&amp;width=360&amp;height=190&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false"
@@ -38,21 +41,21 @@
 		</div>
 		
 		<div class="right-footer" style="width: 30%;padding-left: 2%">
-			<h4>Bản quyền thuộc</h4>
-			<p><strong>Công Ty CP Kiến Trúc Xây Dựng Home Decor</strong><br>
+			<h4 style="color:#fff">Bản quyền thuộc</h4>
+			<p style="color:#fff"><strong>Công Ty CP Kiến Trúc Xây Dựng Home Decor</strong><br>
 				GPĐKKD số: 0314 373 972
 			</p>
-			<p>
+			<p style="color:#fff">
 				Trụ sở: Tầng M, tòa nhà An Phú Plaza, số 117-119 đường Lý Chính Thắng, P.7, Q.3, Tp.HCM
 			</p>
-			<p>
+			<p style="color:#fff">
 				Văn phòng giao dịch 01: Tầng 3, tòa nhà An Phú Plaza, số 117-119 đường Lý Chính Thắng, P.7, Q.3, Tp.HCM
 			</p>
-			<p>
+			<p style="color:#fff">
 				Văn phòng giao dịch 02: Tầng 1, tòa nhà Packsimex Plaza, số 52 đường Đông Du, P.Bến Nghé, Q.1, Tp.HCM
 			</p>
-			<p><i class="fa fa-phone"></i> Hotline: <a href="tel:0917 049 077">0917 049 077  |  CSKH: 0917 049 077</a></p>
-			<p><i class="fa fa-envelope"></i> Email: <a href="mailto:homedecor.info.vn">contact@homedecor.info.vn</a>  |  Website: <a href="">homedecor.info.vn</a></p>
+			<p style="color:#fff"><i class="fa fa-phone"></i> Hotline: <a style="color:#fff" href="tel:0917 049 077">0917 049 077</a></p>
+			<p style="color:#fff"><i class="fa fa-envelope"></i> Email: <a style="color:#fff" href="mailto:homedecor.info.vn">contact@homedecor.info.vn</a>  |  Website: <a style="color:#fff" href="">homedecor.info.vn</a></p>
 			<p></p>
 		</div>
 		<div class="clear"></div>
@@ -61,7 +64,7 @@
 	
 	<div style="padding-top: 25px">
 	<div class="clear"> </div>
-	<div style="text-align: center"> Copyright © <a style="color: blue;" href="http://homedecor.info.vn" target="_blank">Home Decor</a> </div>
+	<div style="text-align: center;color:#c1c1c1;"> Copyright © <a style="color:#c1c1c1;" href="http://homedecor.info.vn" target="_blank">Home Decor</a> </div>
 </div>
 </div><!--footer-->
     
