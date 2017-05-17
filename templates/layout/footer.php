@@ -41,9 +41,11 @@
 		</div>
 		
 		<div class="right-footer" style="width: 30%;padding-left: 2%">
-			<h4 style="color:#fff">Bản quyền thuộc</h4>
-			<p style="color:#fff"><strong>Công Ty CP Kiến Trúc Xây Dựng Home Decor</strong><br>
+			<p style="color:#fff"><strong>CÔNG TY CP KIẾN TRÚC XÂY DỰNG HOME DECOR</strong><br>
 				GPĐKKD số: 0314 373 972
+			</p>
+			<p style="color:#fff">
+				Mã số thuế: 0314 373 972 do sở Kế Hoạch Đầu Tư Tp.HCM cấp
 			</p>
 			<p style="color:#fff">
 				Trụ sở: Tầng M, tòa nhà An Phú Plaza, số 117-119 đường Lý Chính Thắng, P.7, Q.3, Tp.HCM
@@ -55,7 +57,8 @@
 				Văn phòng giao dịch 02: Tầng 1, tòa nhà Packsimex Plaza, số 52 đường Đông Du, P.Bến Nghé, Q.1, Tp.HCM
 			</p>
 			<p style="color:#fff"><i class="fa fa-phone"></i> Hotline: <a style="color:#fff" href="tel:0917 049 077">0917 049 077</a></p>
-			<p style="color:#fff"><i class="fa fa-envelope"></i> Email: <a style="color:#fff" href="mailto:homedecor.info.vn">contact@homedecor.info.vn</a>  |  Website: <a style="color:#fff" href="">homedecor.info.vn</a></p>
+			<p style="color:#fff"><i class="fa fa-envelope"></i> Email: <a style="color:#fff" href="mailto:homedecor.info.vn">hd@homedecor.info.vn</a> | <a style="color:#fff" href="">kientrucxaydunghomedecor@gmail.com</a></p>
+			<p style="color:#fff"> Website: <a style="color:#fff" href="">homedecor.info.vn</a></p>
 			<p></p>
 		</div>
 		<div class="clear"></div>
