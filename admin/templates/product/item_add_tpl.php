@@ -93,6 +93,36 @@ $tretrung = ($item['phong_cach']=='tre-trung')?'selected':'';
     $str_phongcach.='<option value="sang-trong" '.$sangtrong.'>Sang trọng</option>';
     $str_phongcach.='<option value="tre-trung" '.$tretrung.'>Trẻ trung</option>';
 $str_phongcach.='</select>';
+$str_xuatxu='<select id="xuat_xu" name="xuat_xu" class="main_font">
+		<option value="0">Chọn danh mục</option>
+		';
+$chauau = ($item['xuat_xu']=='chau-au')?'selected':'';
+$dailoan = ($item['xuat_xu']=='dai-loan')?'selected':'';
+$duc = ($item['xuat_xu']=='duc')?'selected':'';
+$hanquoc = ($item['xuat_xu']=='han-quoc')?'selected':'';
+$italia = ($item['xuat_xu']=='italia')?'selected':'';
+$malaysia = ($item['xuat_xu']=='malaysia')?'selected':'';
+$nhatban = ($item['xuat_xu']=='nhat-ban')?'selected':'';
+$trungquoc = ($item['xuat_xu']=='trung-quoc')?'selected':'';
+$vietnam = ($item['xuat_xu']=='viet-nam')?'selected':'';
+$str_xuatxu.='<option value="chau-au" '.$chauau.'>Châu Âu</option>';
+$str_xuatxu.='<option value="dai-loan" '.$dailoan.'>Đài Loan</option>';
+$str_xuatxu.='<option value="duc" '.$duc.'>Đức</option>';
+$str_xuatxu.='<option value="han-quoc" '.$hanquoc.'>Hàn Quốc</option>';
+$str_xuatxu.='<option value="italia" '.$italia.'>Italia</option>';
+$str_xuatxu.='<option value="malaysia" '.$malaysia.'>Malaysia</option>';
+$str_xuatxu.='<option value="nhat-ban" '.$nhatban.'>Nhật Bản</option>';
+$str_xuatxu.='<option value="trung-quoc" '.$trungquoc.'>Trung Quốc</option>';
+$str_xuatxu.='<option value="viet-nam" '.$vietnam.'>Việt Nam</option>';
+$str_xuatxu.='</select>';
+$str_tinhtrang='<select id="tinh_trang" name="tinh_trang" class="main_font">
+		<option value="0">Chọn danh mục</option>
+		';
+$conhang = ($item['tinh_trang']=='Còn hàng')?'selected':'';
+$hangsapve = ($item['tinh_trang']=='Hàng sắp về')?'selected':'';
+$str_tinhtrang.='<option value="Còn hàng" '.$conhang.'>Còn hàng</option>';
+$str_tinhtrang.='<option value="Hàng sắp về" '.$hangsapve.'>Hàng sắp về</option>';
+$str_tinhtrang.='</select>';
 function get_main_list()
 {
 	$sql="select * from table_product_list order by stt,id asc";
@@ -298,7 +328,9 @@ function get_main_list22($id_mau)
     <br />  
    	<b>Hiển thị</b> <input type="checkbox" name="hienthi" <?=(!isset($item['hienthi']) || $item['hienthi']==1)?'checked="checked"':''?>><br /> 
    	<b>Chính sách</b> <input type="checkbox" name="chinhsach" <?=(!isset($item['chinhsach']) || $item['chinhsach']==1)?'checked="checked"':''?>><br /> 
-   	<b>Phong cách</b> <?php echo $str_phongcach;?><br>
+   	<b>Phong cách</b> <?php echo $str_phongcach;?><br><br>
+   	<b>Xuất xứ</b> <?php echo $str_xuatxu;?><br><br>
+   	<b>Tình trạng</b> <?php echo $str_tinhtrang;?><br><br>
 	<input type="hidden" name="id" id="id" value="<?=@$item['id']?>" />
 	<input type="submit" value="Lưu" class="btn" />
 	<input type="button" value="Thoát" onclick="javascript:window.location='index.php?com=product&act=man'" class="btn" />

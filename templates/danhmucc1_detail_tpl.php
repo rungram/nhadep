@@ -27,22 +27,40 @@
 function orderajax(){
 	var order =  $('#orderby').val();
 	var phongcach =  $('#phongcach').val();
+	var xuatxu =  $('#xuatxu').val();
     $.ajax({
         url	    : "danhmuc_ajax_tpl.php",
         type		: "POST",
-        data		: {id: <?php echo $id;?>, order: order ,phongcach: phongcach},
+        data		: {id: <?php echo $id;?>, order: order ,phongcach: phongcach ,xuatxu: xuatxu},
         success	: function(data) {
 	        $(".products").html(data);
 	        }
          });
 };
+$(document).ready(function() {
+    $(".vungphongcach").on('click', '.check', function(e) {
+    	$(this).parents('.vungphongcach').find(".active").removeClass("active");
+    	$(this).find(".checked").addClass("active");
+    });
+    $(".vungxuatxu").on('click', '.check', function(e) {
+    	$(this).parents('.vungxuatxu').find(".active").removeClass("active");
+    	$(this).find(".checked").addClass("active");
+    });
+});
+
 function changephongcach(value){
 	$('#phongcach').val(value);
+	orderajax();
+};
+
+function changexuatxu(value){
+	$('#xuatxu').val(value);
 	orderajax();
 };
 </script>
 	<!-- start header -->
 <input type="hidden" id="phongcach" />
+<input type="hidden" id="xuatxu" />
 <div class="brackcum">
 	<div class="container">
      <!-- Breadcrumb NavXT 5.3.0 -->
@@ -59,28 +77,28 @@ function changephongcach(value){
 		<div class="left">
 			<div class="filter">
 				<h4>Phong cách:</h4>
-				<ul class="filter_ul" >
-					<li class="phongcach" ><a onclick="changephongcach('all')"><p class="active"><span></span></p>Tất cả</a></li>
-											<li class="phongcach"><a onclick="changephongcach('co-dien')"><p><span></span></p>Cổ điển</a></li>
-											<li class="phongcach"><a onclick="changephongcach('hien-dai')"><p><span></span></p>Hiện đại</a></li>
-											<li class="phongcach"><a onclick="changephongcach('sang-tao')"><p><span></span></p>Sáng tạo</a></li>
-											<li class="phongcach"><a onclick="changephongcach('sang-trong')"><p><span></span></p>Sang trọng</a></li>
-											<li class="phongcach"><a onclick="changephongcach('tre-trung')"><p><span></span></p>Trẻ trung</a></li>
+				<ul class="filter_ul vungphongcach">
+					<li class="phongcach" ><a onclick="changephongcach('all')" class="check"><p class="checked active"><span></span></p>Tất cả</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('co-dien')"><p class="checked"><span></span></p>Cổ điển</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('hien-dai')"><p class="checked"><span></span></p>Hiện đại</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('sang-tao')"><p class="checked"><span></span></p>Sáng tạo</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('sang-trong')"><p class="checked"><span></span></p>Sang trọng</a></li>
+											<li class="phongcach"><a class="check" onclick="changephongcach('tre-trung')"><p class="checked"><span></span></p>Trẻ trung</a></li>
 									</ul>
 			</div>
 			<div class="filter">
 				<h4>Xuất xứ:</h4>
-				<ul class="filter_ul" id="filter_made">
-					<li><a href="#" data-fill=""><p class="active"><span></span></p>Tất cả</a></li>
-											<li><a href="#" data-fill="chau-au"><p><span></span></p>Châu Âu</a></li>
-											<li><a href="#" data-fill="dai-loan"><p><span></span></p>Đài Loan</a></li>
-											<li><a href="#" data-fill="duc"><p><span></span></p>Đức</a></li>
-											<li><a href="#" data-fill="han-quoc"><p><span></span></p>Hàn Quốc</a></li>
-											<li><a href="#" data-fill="italia"><p><span></span></p>Italia</a></li>
-											<li><a href="#" data-fill="malaysia"><p><span></span></p>Malaysia</a></li>
-											<li><a href="#" data-fill="nhat-ban"><p><span></span></p>Nhật Bản</a></li>
-											<li><a href="#" data-fill="trung-quoc"><p><span></span></p>Trung Quốc</a></li>
-											<li><a href="#" data-fill="viet-nam"><p><span></span></p>Việt Nam</a></li>
+				<ul class="filter_ul vungphongcach">
+					<li><a class="check" onclick="changexuatxu('all')"><p class="checked active"><span></span></p>Tất cả</a></li>
+											<li><a class="check" onclick="changexuatxu('chau-au')"><p class="checked"><span></span></p>Châu Âu</a></li>
+											<li><a class="check" onclick="changexuatxu('dai-loan')"><p class="checked"><span></span></p>Đài Loan</a></li>
+											<li><a class="check" onclick="changexuatxu('duc')"><p class="checked"><span></span></p>Đức</a></li>
+											<li><a class="check" onclick="changexuatxu('han-quoc')"><p class="checked"><span></span></p>Hàn Quốc</a></li>
+											<li><a class="check" onclick="changexuatxu('italia')"><p class="checked"><span></span></p>Italia</a></li>
+											<li><a class="check" onclick="changexuatxu('malaysia')"><p class="checked"><span></span></p>Malaysia</a></li>
+											<li><a class="check" onclick="changexuatxu('nhat-ban')"><p class="checked"><span></span></p>Nhật Bản</a></li>
+											<li><a class="check" onclick="changexuatxu('trung-quoc')"><p class="checked"><span></span></p>Trung Quốc</a></li>
+											<li><a class="check" onclick="changexuatxu('viet-nam')"><p class="checked"><span></span></p>Việt Nam</a></li>
 									</ul>
 			</div>
 		</div>
@@ -128,7 +146,7 @@ function changephongcach(value){
 												<p class="price">Giá: <span><span class="amount"><?php echo number_format ($result_spnam[$i]['gia'],0,",",".")." ₫";?></span></span></p>
 																	</div>
 							<div class="status">
-								<p>Tình trạng: Hàng sắp về</p>
+								<p>Tình trạng: <?=$result_spnam[$i]['tinh_trang']?></p>
 							</div>
 						</div>
 					</div>

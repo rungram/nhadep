@@ -71,7 +71,18 @@ if(isset($_GET['id']))
 <div class="brackcum">
 	<div class="container">
      <!-- Breadcrumb NavXT 5.3.0 -->
-<span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to ." href="http://nhadep.com.vn" class="home">Trang chủ</a></span><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to the Sản phẩm mới Danh mục sản phẩm archives." href="http://nhadep.com.vn/danh-muc/san-pham-moi/">Sản phẩm mới</a></span><span typeof="v:Breadcrumb"><a rel="v:url" property="v:title" title="Go to the Phòng khách Danh mục sản phẩm archives." href="http://nhadep.com.vn/danh-muc/san-pham-moi/phong-khach-san-pham-moi/">Phòng khách</a></span><span typeof="v:Breadcrumb"><span property="v:title">Sofa da Italia New Ming góc trái, màu nâu | Mã: 72608036</span></span>	</div>
+<span typeof="v:Breadcrumb">
+<a rel="v:url" property="v:title" title="Go to ." href="index.html" class="home">Trang chủ</a>
+</span>
+<span typeof="v:Breadcrumb">
+<a rel="v:url" property="v:title" title="Go to ." href='danh-muc-list/<?php echo $result_l["tenkhongdau"];?>-<?php echo $result_l["id"];?>.html' class="home"><?php echo $result_l['ten_vi'];?></a>
+</span>
+<span typeof="v:Breadcrumb">
+<a rel="v:url" property="v:title" title="Go to ." href='danh-muc-cat/<?php echo $result_c["tenkhongdau"];?>-<?php echo $result_c["id"];?>.html' class="home"><?php echo $result_c['ten_vi'];?></a>
+</span>
+<span typeof="v:Breadcrumb">
+<span property="v:title"><?=$chitiet_sp["ten_vi"]?></span>
+</span>
 </div>				
 <div id="content" class="single_product">
 	<div class="container">
@@ -225,7 +236,7 @@ if(isset($_GET['id']))
 							<p class="price">Giá: <span><span class="amount"><?php echo number_format ($result_laylq[$i]['gia'],0,",",".")." ₫";?></span></span></p>
 																</div>
 					<div class="status">
-						<p>Tình trạng: Còn hàng</p>
+						<p>Tình trạng: <?=$result_laylq[$i]['tinh_trang']?></p>
 					</div>
 				</div>
 			</div>

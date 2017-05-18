@@ -21,7 +21,7 @@
             }
 			$d->reset();
 			$order = (!empty($_POST['order'])) ? 'order by gia '.$_POST['order'] : 'order by stt asc';
-			$sql_tungdanhmuc="select * from #_product where hienthi =1 and id_list='$id' ".$phongcach." ".$xuatxu." ".$order;
+			$sql_tungdanhmuc="select * from #_product where hienthi =1 and id_cat='$id' ".$phongcach." ".$xuatxu." ".$order;
 			$d->query($sql_tungdanhmuc);	
 			$result_spnam=$d->result_array();	
 			

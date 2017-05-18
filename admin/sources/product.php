@@ -264,6 +264,8 @@ function save_item(){
 		$data['ten_en'] = $_POST['ten_en'];
 		$data['ten_cn'] = $_POST['ten_cn'];
 		$data['phong_cach'] = $_POST['phong_cach'];
+		$data['xuat_xu'] = $_POST['xuat_xu'];
+		$data['tinh_trang'] = $_POST['tinh_trang'];
 		$data['soluong'] = $_POST['soluong'];
 		$data['baohanh'] = $_POST['baohanh'];
 		$data['trinhtrang'] = $_POST['trinhtrang'];
@@ -310,6 +312,8 @@ function save_item(){
 		$data['baohanh'] = $_POST['baohanh'];
 		$data['trinhtrang'] = $_POST['trinhtrang'];
 		$data['phong_cach'] = $_POST['phong_cach'];
+		$data['xuat_xu'] = $_POST['xuat_xu'];
+		$data['tinh_trang'] = $_POST['tinh_trang'];
 		$data['xuatxu'] = $_POST['xuatxu'];
 		$data['vanchuyen'] = $_POST['vanchuyen'];
 		$data['masp'] = $_POST['masp'];	
