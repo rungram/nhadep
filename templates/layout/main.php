@@ -58,77 +58,86 @@
 	$result_thuvienanh=$d->result_array();
 ?>
 
-
-<div class="container">
 	<div class="banner-slider">
-		<ul class="index_slider">
-		<li> <img src="images/16.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/banner-web4.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/sofa-vai-2.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/banner-web4.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/sofa-da-2.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/ban-an-7.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/banner-web4.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/ban-an-2.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/PN-1.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/PN-2.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		<li> <img src="images/banner-web4.jpg" alt="" />
-			<div class="container">
-			<h3></h3>
-			<p></p>
-			</div>
-		</li>
-		</ul>
+	<ul class="index_slider">
+					<li>
+				<img src="images/16.jpg" alt="" />
+				<div class="container">	
+				  <h3></h3>
+					<p></p>
+				</div>
+	  </li>
+					<li>
+				<img src="images/banner-web4.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/sofa-vai-2.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/banner-web4.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/sofa-da-2.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/ban-an-7.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/banner-web4.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/ban-an-2.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/PN-1.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/PN-2.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+					<li>
+				<img src="images/banner-web4.jpg" alt="" />
+				<div class="container">	
+					<h3></h3>
+					<p></p>
+				</div>
+			</li>
+  </ul>
 		<div class="icons-slider">
 			<div class="container">
 				<ul>
@@ -136,5 +145,4 @@
 				</ul>
 			</div>
 		</div>
-	</div>
 	</div>

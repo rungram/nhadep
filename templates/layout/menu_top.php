@@ -23,7 +23,7 @@
 						$toggle='';
 					}
 				 ?>
-	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226" > <a href="<?php echo $href;?>">
+	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226"> <a href="<?php echo $href;?>">
 	<?=$list[$i]["ten_vi"]?>
 	</a>
 	<?php

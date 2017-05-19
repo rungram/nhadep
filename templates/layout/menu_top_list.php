@@ -4,8 +4,6 @@
 	$d->query($sql_list);
 	$list =$d->result_array();
 ?>
-
-    <ul id="menu-danh-muc-san-pham" class="">
                 <?php for($i=0,$count_l=count($list);$i<$count_l;$i++){
 				  $d->reset();
 				  $sql_cat ="select *  from #_product_cat where id_list='".$list[$i]["id"]."' order by stt asc";
@@ -35,5 +33,4 @@
 					?>
 					<a href="<?php echo $href;?>"><?=$list[$i]["ten_vi"]?></a>
 				</li>
-                <?php }?>       
-    </ul>
+                <?php }?> 
