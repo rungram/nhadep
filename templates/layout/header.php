@@ -13,11 +13,10 @@
 <div id="header">
 		<div class="header"> <!--Thay class container bằng class header-->
         	<div class="container"> <!--Add thêm div -->
-			<a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
 			
+			<a href="index.html" class="logo" ><img src="images/logo.png" alt=""  ></a>
 			<div class="">
-					<div class="menu-header">
-            	
+				<div class="menu-header">
 				<div class="toogle-menu toggle-menu-top">
 					MENU
 					<a href="#">
