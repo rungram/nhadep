@@ -13,9 +13,7 @@
 	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226">
 		<a href="#">
 	sản phẩm nội thất</a>
-	
 	<ul class="sub-menu">
-	
 		<?php
 		for($i=0,$count_l=count($list);$i<$count_l;$i++){
 			$d->reset();
@@ -45,10 +43,6 @@
 	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226">
 	<a href="http://homedecor.info.vn/danh-muc/nha-pho-2.html" target="_blank">
 	Dịch vụ thiết kế</a>
-	</li>
-	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226">
-	<a href="http://homedecor.info.vn/danh-muc/thi-cong-11.html" target="_blank">
-	công trình Thi công</a>
 	</li>
 	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226">
 	<a href="http://homedecor.info.vn/lien-he.html" target="_blank">
