@@ -8,7 +8,7 @@
 <ul id="menu-danh-muc-san-pham" class="">
 	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226">
 	<a href="index.html">
-	Trang chủ</a>
+	Giới thiệu</a>
 	</li>
 	<li id="menu-item-226" class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-has-children menu-item-226">
 		<a href="#">

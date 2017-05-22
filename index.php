@@ -44,7 +44,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Meta when no responsive:
 	<meta name="viewport" content="width=1000"> -->
-<title>Nội thất Nhà đẹp | Thương hiệu uy tín hàng đầu từ năm 1999.</title>
+<title>Công Ty CP Kiến Trúc Xây Dựng Home Decor</title>
 <!-- Favicon 
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> -->
 <!-- Custom css -->
